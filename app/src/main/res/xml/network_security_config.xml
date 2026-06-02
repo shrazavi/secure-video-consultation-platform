@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Matches the domain and all subdomains -->
+        <domain includeSubdomains="true">www.shrazavi.ir</domain>
+        <!-- Only match api.dev.com -->
+        <domain includeSubdomains="true">www.shrazavi.ir/social/</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+
+</network-security-config>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tabs>
+
+        <tab
+            id="@+id/call"
+            icon="@drawable/ic_call"
+            title="calllog"
+            />
+        <tab
+            id="@+id/chat"
+            icon="@drawable/ic_chat"
+            title="calllog"/>
+
+        <tab
+            id="@+id/profile"
+            icon="@drawable/ic_baseline_account_circle_24"
+            title="calllog"/>
+
+    </tabs>>
+
+</PreferenceScreen>

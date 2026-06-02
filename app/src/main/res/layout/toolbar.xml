@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:background="#0993ca"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_marginRight="16dp"
+                android:scaleType="fitCenter"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/hambergur_menu"
+                android:id="@+id/hambergurMenu"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Chat List"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:layout_marginLeft="32dp"
+                android:layout_weight=".50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginRight="16dp"
+                android:scaleType="fitCenter"
+                android:layout_weight=".25"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/new_message"
+                android:id="@+id/writeNewMessage"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
+

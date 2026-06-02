@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="30dp">
+
+
+    <LinearLayout
+        android:id="@+id/audioLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/incomingAudioOnlyImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Switch to voice answering  "
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/acceptLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audioLayout"
+        android:layout_alignLeft="@id/audioLayout"
+        android:layout_alignRight="@id/audioLayout"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#A0FF78"
+            app:cardCornerRadius="37dp">
+
+            <com.agik.AGIKSwipeButton.View.Swipe_Button_View
+                android:id="@+id/acceptvideocall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sb_stroke_bg_color="#00FFFFFF"
+                app:sb_swipe_animate_text="true"
+                app:sb_swipe_bg_color="#00FF0000"
+                app:sb_swipe_reverse="true"
+                app:sb_swipe_text_color="#FFFFFF"
+                app:sb_thumb_bg_color="#00FF00FF"
+                app:sb_thumb_image="@drawable/videoincome" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/acceptImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/av_video_answer_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hangupLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audioLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#FD80AB"
+            app:cardCornerRadius="37dp">
+
+            <com.agik.AGIKSwipeButton.View.Swipe_Button_View
+                android:id="@+id/rejectvideocall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sb_stroke_bg_color="#00FFFFFF"
+                app:sb_swipe_animate_text="true"
+                app:sb_swipe_bg_color="#00FF0000"
+                app:sb_swipe_reverse="false"
+                app:sb_thumb_bg_color="#00FF00FF"
+                app:sb_thumb_image="@drawable/voiseoutcome" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/incomingHangupImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/av_hangup_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backchat"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityChat">
+
+
+    <include layout="@layout/chat_toolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay_edt_search_chat"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        android:hint="جستجو">
+
+        <AutoCompleteTextView
+            android:id="@+id/edt_search_chat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:completionThreshold="1"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:text="سلام" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewChats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <android.widget.Button
+            android:id="@+id/btn_scroll"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/picscroll"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="0"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/lay_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.widget.Button
+                    android:id="@+id/btn_delet_record"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/recorddelete"
+                    android:clickable="true"
+                    android:visibility="visible" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_puse"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/picpuse"
+                    android:clickable="true"
+                    android:visibility="gone" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_play_record"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/picplay"
+                    android:clickable="true"
+                    android:visibility="visible" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight=".8"
+                    android:background="@drawable/cornerbtnvoise"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="#008EFF"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <com.shrazavi.dadmehr.CustomEditText
+                android:id="@+id/edtTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corner_edt"
+                android:drawableRight="@drawable/picattach"
+                android:hint="Send Message..."
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_timer_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingStart="60dp"
+                android:text="00:00"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/seekvoise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_marginStart="60dp"
+                android:progress="10"
+                android:progressDrawable="@drawable/customprogress"
+                android:splitTrack="false"
+                android:thumb="@drawable/customthumb"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_timer_seek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingStart="60dp"
+                android:paddingTop="30dp"
+                android:text="00:00"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <android.widget.Button
+                android:id="@+id/btnok"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/picok"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/prgvideo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+
+            <android.widget.Button
+                android:id="@+id/btn_stop_record"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/picstop"
+                android:visibility="gone" />
+
+            <android.widget.Button
+                android:id="@+id/btnVoice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/picvoice"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+            <android.widget.Button
+                android:id="@+id/btnSend"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/picsend"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/acceptLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#A0FF78"
+            app:cardCornerRadius="37dp">
+
+            <com.agik.AGIKSwipeButton.View.Swipe_Button_View
+                android:id="@+id/acceptaudiocall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sb_stroke_bg_color="#00FFFFFF"
+                app:sb_swipe_animate_text="true"
+                app:sb_swipe_bg_color="#00FF0000"
+                app:sb_swipe_reverse="true"
+                app:sb_swipe_text_color="#FFFFFF"
+                app:sb_thumb_bg_color="#00FF00FF"
+                app:sb_thumb_image="@drawable/voiseincome" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/acceptImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/av_audio_answer_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Answer"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hangupLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#FD80AB"
+            app:cardCornerRadius="37dp">
+
+            <com.agik.AGIKSwipeButton.View.Swipe_Button_View
+                android:id="@+id/rejectaudiocall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sb_stroke_bg_color="#00FFFFFF"
+                app:sb_swipe_animate_text="true"
+                app:sb_swipe_bg_color="#00FF0000"
+                app:sb_swipe_reverse="false"
+                app:sb_thumb_bg_color="#00FF00FF"
+                app:sb_thumb_image="@drawable/voiseoutcome" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/incomingHangupImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/av_hangup_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hang up"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    </RelativeLayout>
+
+</LinearLayout>

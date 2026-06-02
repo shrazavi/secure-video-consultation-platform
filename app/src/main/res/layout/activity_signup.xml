@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/logo" />
+
+            <RadioGroup
+                android:id="@+id/radiogroupsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiovl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="وکیل"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radiomn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="کاربر عادی"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner_edt"
+                android:gravity="center"
+                android:hint="نام و نام خانوادگی"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_melli"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner_edt"
+                android:gravity="center"
+                android:hint="کد ملی"
+                android:textSize="20sp"
+                android:inputType="numberSigned"
+                android:ems="10"/>
+
+            <LinearLayout
+                android:id="@+id/lay_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spin_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_edt"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spin_ostan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_edt"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_vl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edt_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_edt"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="سابقه"
+                    android:inputType="numberSigned"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edt_parvane"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_edt"
+                    android:gravity="center"
+                    android:hint="شماره پروانه وکالت"
+                    android:textSize="20sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner_edt"
+                android:drawablePadding="-34dp"
+                android:gravity="center"
+                android:hint="Username"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner_edt"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="لطفا شماره همراه خود را وارد کنید"
+                android:textColor="#0d2bc0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/edtcod"
+                    android:gravity="center_vertical|end"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="0dp"
+                    android:text="+98"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edt_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="clip_horizontal|center"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/edtnumber"
+                    android:drawablePadding="-35dp"
+                    android:ems="10"
+                    android:gravity="start|center_vertical"
+                    android:hint="9120000000"
+                    android:inputType="numberSigned"
+                    android:textAlignment="textStart"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_start_style"
+                android:text="ثبت نام"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:backgroundTint="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+
+include ':libwebrtc'
+include ':app'
+rootProject.name = "Dadmehr"

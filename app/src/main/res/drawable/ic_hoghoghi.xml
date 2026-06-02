@@ -1,0 +1,27 @@
+<vector android:height="48.81203dp" android:viewportHeight="541"
+    android:viewportWidth="532" android:width="48dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h532v541h-532z"/>
+        <path android:fillAlpha="0" android:fillColor="#FFFFFF"
+            android:fillType="evenOdd"
+            android:pathData="M2,270.5C2,122.212 120.197,2 266,2 411.803,2 530,122.212 530,270.5 530,418.788 411.803,539 266,539 120.197,539 2,418.788 2,270.5Z"
+            android:strokeAlpha="0" android:strokeColor="#FFFFFF" android:strokeWidth="2"/>
+        <path android:fillAlpha="0" android:fillColor="#FFFFFF"
+            android:fillType="evenOdd"
+            android:pathData="M29,271.5C29,139.78 135.109,33 266,33 396.891,33 503,139.78 503,271.5 503,403.22 396.891,510 266,510 135.109,510 29,403.22 29,271.5Z"
+            android:strokeColor="#4A70F8" android:strokeWidth="24"/>
+        <group>
+            <clip-path android:pathData="M74,62h384v384h-384z"/>
+            <group>
+                <clip-path android:pathData="M74,62h384v384h-384z"/>
+                <group>
+                    <clip-path android:pathData="M74,62h384v384h-384z"/>
+                    <path android:fillColor="#4A70F8" android:pathData="M250,382 L242,382 242,366 130,366 130,382 122,382C113.2,382 106,389.2 106,398 106,406.8 113.2,414 122,414L250,414C258.8,414 266,406.8 266,398 266,389.2 258.8,382 250,382Z"/>
+                    <path android:fillColor="#4A70F8" android:pathData="M249.6,302.4C254.4,297.6 254.4,290 249.6,285.6L186.4,222.4C181.6,217.6 174,217.6 169.6,222.4L154,238 234,318 249.6,302.4Z"/>
+                    <path android:fillColor="#4A70F8" android:pathData="M345.6,189.6C350.4,194.4 358,194.4 362.4,189.6L378,174 298,94 282.4,109.6C277.6,114.4 277.6,122 282.4,126.4L345.6,189.6Z"/>
+                    <path android:fillColor="#4A70F8" android:pathData="M422,330 L314,222 338,198 274,134 194,214 258,278 290,246 398,354C404.8,360.8 415.2,360.8 422,354 428.8,347.2 428.8,336.8 422,330Z"/>
+                </group>
+            </group>
+        </group>
+    </group>
+</vector>

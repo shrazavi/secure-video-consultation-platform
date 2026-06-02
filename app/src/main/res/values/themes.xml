@@ -1,0 +1,223 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VakilSocial" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button_end_call_normal_color</item>
+        <item name="colorPrimaryVariant">@color/violet</item>
+        <item name="colorOnPrimary">@color/button_end_call_normal_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.VakilSocialsignout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <!-- Primary brand color. -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="fontFamily">@font/iransan</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body2</item>
+        <item name="colorOnSurface">#0FABFF</item>
+        <item name="colorPrimary">#0FABFF</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:background">#0000FFE6</item>
+        <item name="colorPrimaryDark">#0FABFF</item>
+        <item name="colorSecondary">@color/blueviolet</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+
+
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.VakilSociallogin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <!-- Primary brand color. -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="fontFamily">@font/iransan</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body2</item>
+        <item name="colorOnSurface">#FEFFFF</item>
+        <item name="colorPrimary">#F4F4F4</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:background">#0000FFE6</item>
+        <item name="colorPrimaryDark">#0FABFF</item>
+        <item name="colorSecondary">@color/color_blue_accent</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+
+
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.VakilSocialstart" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <!-- Primary brand color. -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="fontFamily">@font/iransan</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body2</item>
+        <item name="colorOnSurface">#FEFFFF</item>
+        <item name="colorPrimary">#F4F4F4</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:background">#0000FFE6</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorSecondary">@color/color_blue_accent</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+
+
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.VakilSocialmain" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="fontFamily">@font/iransan</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body2</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryVariant">@color/blueviolet</item>
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+        <item name="android:background">#0003DAC5</item>
+        <!-- Secondary brand color. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondary">#FFC800</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorOnSurface">#E800A6FF</item>
+        <item name="colorSecondary">#E800A6FF</item>
+    </style>
+
+    <style name="Theme.Law" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <!-- Primary brand color. -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="fontFamily">@font/iransan</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body2</item>
+        <item name="colorOnSurface">#0FABFF</item>
+        <item name="colorPrimary">#0FABFF</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:background">#0000FFE6</item>
+        <item name="colorPrimaryDark">#0FABFF</item>
+        <item name="colorSecondary">#0FABFF</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Secondary brand color. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Timework" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+
+
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <!-- Primary brand color. -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="fontFamily">@font/iransan</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body2</item>
+        <item name="colorOnSurface">#0FABFF</item>
+        <item name="colorPrimary">#0FABFF</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:background">#0000FFE6</item>
+        <item name="colorPrimaryDark">#0FABFF</item>
+        <item name="colorSecondary">#FFC800</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.VakilSocialchat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+
+
+
+
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="fontFamily">@font/iransan</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body2</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorPrimary">@color/blueviolet</item>
+        <item name="colorPrimaryVariant">@color/blueviolet</item>
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+        <item name="android:background">#0003DAC5</item>
+        <!-- Secondary brand color. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondary">#00C4FF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.VakilSocialcrop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+
+
+
+
+        <!-- Primary brand color. -->
+
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/blueviolet</item>
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">@color/blueviolet</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

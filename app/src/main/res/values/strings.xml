@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">دادمهر</string>
+    <string name="call">CollLog</string>
+    <string name="chat">Message</string>
+    <string name="profile">Profile</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="reserve">به دلیل داشتن رزرو از سوی کاربران قادر به تغییر ساعات فعالیت در اپلیکیشن نیستید لطفا بعد از اتمام نوبت های رزرو شده مجددا اقدام نمایید.</string>
+    <string name="read_more">بیشتر</string>
+    <string name="read_less">کمتر</string>
+
+    <string name="ticket">توضیحات ( حداکثر 4 سطر )</string>
+    <string name="price">مبلغ(تومان)</string>
+    <string name="chattariff">تعرفه تماس متنی ( تومان )</string>
+    <string name="voisetariff">تعرفه تماس صوتی ( تومان )</string>
+    <string name="videotariff">تعرفه تماس تصویری ( تومان )</string>
+    <string name="calldesc">متاسفانه تماس قبل از اتمام زمان مشاوره قطع شده است.  خواهشمندیم وضعیت مشاوره را تعیین نمایید.</string>
+    <string name="developer">shrazavi</string>
+
+
+    <string name="webrtc_chat_mute">Mute</string>
+    <string name="webrtc_chat_hands_free">Hands-free</string>
+    <string name="webrtc_chat_refuse">Reject</string>
+    <string name="webrtc_chat_answer">Answer</string>
+    <string name="webrtc_chat_hang_up">hang up</string>
+    <string name="webrtc_switch_voice">Cut to speech</string>
+    <string name="webrtc_switch_camera">Switch camera</string>
+    <string name="webrtc_close_camera">Turn off the camera</string>
+    <string name="webrtc_open_camera">Turn on the camera</string>
+
+    <string name="av_waiting">منتظر بمانید تا طرف مقابل تماس را پاسخ دهد.</string>
+    <string name="av_audio_invite">شما را به تماس صوتی دعوت می کند</string>
+    <string name="av_video_invite">شما را به تماس تصویری دعوت می کند</string>
+
+    <string name="title_user">User</string>
+    <string name="title_room">Room</string>
+    <string name="title_setting">Setting</string>
+
+</resources>

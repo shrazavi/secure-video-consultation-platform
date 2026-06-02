@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.ActivityMain"
+    tools:showIn="@layout/activity_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/gradienttool"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp">
+
+                        <android.widget.Button
+                            android:id="@+id/btn_notify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_notifications" />
+
+                        <android.widget.Button
+                            android:id="@+id/btn_notify_count"
+
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/corner_btn_red"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            tools:text="5" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/button2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/pr_main_load"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+
+                            android:layout_marginTop="7dp"
+                            android:layout_weight="0"
+                            android:theme="@style/ThemeOverlay.Progresspar"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txt_connection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Connecting"
+                            android:textColor="#FFFFFF"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF" />
+
+                    <android.widget.Button
+                        android:id="@+id/btn_main_search"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/ic_search" />
+
+                    <ImageView
+                        android:id="@+id/img_profil"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="gone"
+                        app:srcCompat="@mipmap/logo" />
+
+                    <android.widget.Button
+                        android:id="@+id/menu"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/ic_menu" />
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <FrameLayout
+                android:id="@+id/frmlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true">
+
+
+            </FrameLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_bar"
+                style="@style/Widget.App.BottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+               app:itemTextAppearanceActive="@style/TextAppearance.App.Body2"
+
+                app:menu="@menu/bottom" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

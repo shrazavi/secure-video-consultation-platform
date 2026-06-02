@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/post_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:layout_anchorGravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_post_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        tools:text="زهرا سادات رضوی" />
+
+                    <ImageView
+                        android:id="@+id/img_post_profile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        tools:srcCompat="@drawable/chat_count_style" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@mipmap/timage1" />
+
+                <com.shrazavi.dadmehr.core.util.ExpandableTextView
+                    android:id="@+id/txt_post_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    tools:text="وکیل یا نماینده یا جانشین کسی است که از طرف شخص دیگری - حقوقی یا حقیقی - به موجب عقد وکالت برای انجام کاری مأمور می‌شود. وکیل در موضع دفاع، از تامینات شغل قضا برخوردار است و شخصاً امکان مبادرت به تجارت ندارد چون خلاف شان اوست. حرفه وکالت از آثار مترتبه بر تجارت، پیروی نمی‌کند و بدین جهت، وکالت را نمی‌توان یک کسب و کار تلقی کرد." />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_post_like"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="7dp"
+                            android:background="@drawable/ic_like_off" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_post_like"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                tools:text="1 نفر پسندیده" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

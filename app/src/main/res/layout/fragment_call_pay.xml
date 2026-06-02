@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rate_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd_callpay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="50dp">
+
+        <TextView
+            android:id="@+id/txt_callpay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/img_callpay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_callpay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:text="زهراسادات رضوی" />
+
+    <TextView
+        android:id="@+id/txt_callpay_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/calldesc"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/btn_callpay_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_btn_green"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="تمام شدن مشاوره و دریافت کامل هزینه مشاوره"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_callpay_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_btn_red"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="تمام نشدن مشاوره و اجازه برای ادامه مشاوره"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
