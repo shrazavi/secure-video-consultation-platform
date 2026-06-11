@@ -1,3 +1,7 @@
+![WebRTC](https://img.shields.io/badge/WebRTC-Real--Time-blue)
+![Socket.io](https://img.shields.io/badge/Socket.io-Signaling-black)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![Android](https://img.shields.io/badge/Android-Java-success)
 # Secure Video Consultation Platform
 
 A secure telemedicine platform enabling doctors and patients to communicate through real-time audio/video consultations and messaging.
